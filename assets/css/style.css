@@ -49,6 +49,7 @@ h2 {
 
 section {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 ul {
@@ -105,4 +106,25 @@ button:hover {
     font-size: 14px;
   }
   /* Add more responsive styles as needed */
+}
+
+/* Define colors for the icons */
+.phone-icon {
+  color: blue; /* Change the color as needed */
+}
+
+.facebook-icon {
+  color: #3b5998; /* Change the color as needed */
+}
+
+.instagram-icon {
+  color: #c13584; /* Change the color as needed */
+}
+
+.whatsapp-icon {
+  color: #25d366; /* Change the color as needed */
+}
+
+.tiktok-icon {
+  color: #000; /* Change the color as needed */
 }
