@@ -8,6 +8,20 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Add font-awesome CDN for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/media/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/media/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/media/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/media/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Meta description -->
+    <meta name="description"
+        content="اكتشف أحدث الابتكارات التكنولوجية في شركة براند ستور. من الأجهزة الذكية إلى الأجهزة القوية، ابحث عن الحل التقني المثالي لاحتياجاتك. تسوق الآن واحتضن مستقبل التكنولوجيا!">
 </head>
 
 <body>
@@ -39,16 +53,34 @@
             <!-- Add addresses and phone numbers -->
             <p>الهاتف 1: <a href="tel:+977730136334"><i class="fas fa-phone phone-icon"></i> 07730136334</a></p>
             <p>الهاتف 2: <a href="tel:+977860111660"><i class="fas fa-phone phone-icon"></i> 07860111660</a></p>
-            <p>العنوان: كربلاء / الهندية (طويريج) / حي الجمعية / مقابل مجمع الكفيل</p>
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                العنوان: كربلاء / الهندية (طويريج) / حي الجمعية / مقابل مجمع الكفيل
+            </p>
         </section>
     </main>
 
-
     <footer>
-         <div class="footer-content">
-            <p>جميع الحقوق محفوظة &copy; 2023 شركة براند ستور</p>
+        <div class="footer-content">
+            <p id="copyright">
+                جميع الحقوق محفوظة &copy; <span id="startYear">2023</span>-<span id="currentYear"></span> شركة براند
+                ستور
+            </p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var startYear = 2023;
+            var currentYear = new Date().getFullYear();
+
+            document.getElementById('currentYear').textContent = currentYear;
+
+            if (startYear !== currentYear) {
+                document.getElementById('startYear').textContent = startYear;
+            }
+        });
+    </script>
 </body>
 
 </html>
