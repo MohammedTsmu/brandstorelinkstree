@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrandStore Links</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Add font-awesome CDN for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- Add your brand logo -->
+        <img src="assets/media/BrandStoreLogo.JPG" alt="Brand Logo">
+        <h1>أهلا وسهلا في شركة براند ستور</h1>
+        <h1>Welcome to BrandStore Company</h1>
+    </header>
+
+    <main>
+        <section class="store-links">
+            <h2>روابط شركة براند ستور</h2>
+            <!-- Add links to your stores -->
+            <ul>
+                <li><a href="https://www.facebook.com/Brand.Store.kr?mibextid=LQQJ4d" target="_blank"><i
+                            class="fab fa-facebook"></i> فيسبوك</a></li>
+                <li><a href="https://www.instagram.com/brand.store.kr/?igsh=NzN6dTd3cTBzODho" target="_blank"><i
+                            class="fab fa-instagram"></i> انستاغرام</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=9647825476141" target="_blank"><i
+                            class="fab fa-whatsapp"></i> واتساب</a></li>
+                <!-- Add more store links -->
+            </ul>
+        </section>
+
+        <section class="contact-info">
+            <h2>معلومات الاتصال</h2>
+            <!-- Add addresses and phone numbers -->
+            <p>العنوان: كربلاء / الهندية (طويريج) / حي الجمعية / مقايل مجمع الكفيل</p>
+            <p>الهاتف 1: 07730136334 </p>
+            <p>الهاتف 2: 07860111660 </p>
+            <!-- Add more contact information -->
+        </section>
+
+        <section class="qr-code-section">
+            <h2>توليد رمز الاستجابة السريعة</h2>
+            <!-- Button to generate QR code -->
+            <button id="generateQR">Generate QR Code</button>
+            <!-- Display the generated QR code -->
+            <div id="qrCodeDisplay"></div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Add your footer content -->
+    </footer>
+
+    <!-- Add your JavaScript file or script tag here -->
+    <!-- <script>
+        // Add your JavaScript logic for QR code generation here
+        document.getElementById('generateQR').addEventListener('click', function () {
+            // Handle QR code generation logic here
+        });
+    </script> -->
+
+    <!-- Add the qrcode library -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/dist/qrcode.min.js"></script>
+    <script src="assets/js/script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="assets/js/qrcode.js"></script>
+</body>
+
+</html>
